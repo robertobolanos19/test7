@@ -1,0 +1,680 @@
+
+
+* {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    color: white;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    padding-bottom: 5%;
+    animation: 0.6s shake infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25% {
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75% {
+        transform: translate(2px,-1) rotate(2deg);
+    }
+    100% {
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
+}
+
+
+.topNavLogo {
+    width: 150px;
+    height: 140px;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-weight: bold;
+}
+
+.topNavLogo:hover {
+    padding-bottom: 5%;
+    animation: 0.6s shake infinite;
+}
+
+nav {
+    color: white;
+    display: flex;
+    position: absolute;
+    left: 25%;
+    top: 2%;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    margin-top: 1%;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+nav .mainMenu li a:hover {
+    font-size: 1.2rem;
+    margin-top: 2%; 
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin-top: 2%;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .mobile-icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+    border-bottom: 2px white solid;
+    text-align: center;
+}
+
+.titleText {
+    width: 90%;
+    margin: auto; 
+    padding-top: 6%;
+    font-size: 14px;
+    text-indent: 30px;
+}
+
+.selectProject {
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    font-size: 14px;
+    border-bottom: solid 1px white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+.container section {
+    min-width: 0%;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.block { 
+    width: 250px;
+    height: 375px;
+    border-radius: 100px;
+    position: relative;
+    filter: opacity(0.1);
+    filter: grayscale(1.0);
+}
+
+.block-1 {
+    background: url(imgs/tavern.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-2 {
+    background: url(imgs/gundams.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-3 {
+    background: url(imgs/Redprison.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4  {
+    background: url(imgs/tvs.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-5 {
+    background: url(imgs/front\ viewBane.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-6 {
+    background: url(imgs/oldCentaur.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-7 {
+    background: url(imgs/plantside.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-8 {
+    background: url(imgs/deepCover.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-9 {
+    background: url(imgs/laundryCover.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-10 {
+    background: url(imgs/sideDentist.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-11 {
+    background: url(imgs/bk_front.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-12 {
+    background: url(imgs/AtatCover.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-13 {
+    background: url(imgs/tripod_Cover.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-14 {
+    background: url(imgs/marioCover.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-15 {
+    background: url(imgs/Chairman.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-16 {
+    background: url(imgs/gundams.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block:hover{
+    filter: opacity(1.0);
+    text-shadow: 5px 5px black;
+}
+
+h1 {
+    position: absolute;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.block-1 h1, .block-3 h1 {
+    bottom: 5%;
+    left: 45%;
+}
+
+.block-2 h1, .block-4 h1 {
+    top: 10%;
+    left: 10%;
+}
+
+
+.block-5 h1, .block-7 h1 {
+    bottom: 5%;
+    left: 45%;
+}
+
+.block-6 h1, .block-8 h1 {
+    top: 10%;
+    left: 10%;
+}
+
+.block-9 h1, .block-11 h1 {
+    bottom: 5%;
+    left: 45%;
+}
+
+.block-10 h1, .block-12 h1 {
+    top: 10%;
+    left: 10%;
+}
+
+
+.block-13 h1, .block-15 h1 {
+    bottom: 5%;
+    left: 45%;
+}
+
+.block-14 h1, .block-16{
+    top: 10%;
+    left: 10%;
+}
+
+.contacts h1 {
+    width: 90%;
+    height: auto;
+    margin-left: 8%;
+    padding-bottom: 25%;
+    font-size: 16px;
+}
+
+.aboutIntro {
+    font-size: 18px;
+    margin-left: 8%;
+    margin-top: 16%;
+}
+
+.aboutIntro .hello {
+    padding-bottom: 5%;
+}
+
+.aboutImage {
+    position: absolute;
+    top: 190%;
+    left: 62%;
+    width: 30%;
+    height: 55vh;
+    background-color: aqua;
+    background: url(imgs/statue.png) no-repeat 50% 50%;
+    background-size: cover;
+    z-index: -10;
+}
+
+.aboutBio {
+    width: 54%;
+    margin: 10% auto 0 8%;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.skills {
+    width: 54%;
+    margin: 5% auto 5% 8%;
+    font-size: 14px;
+    line-height: 2em; 
+}
+
+.skills h2 {
+   font-weight: bold;
+   text-decoration: underline;
+   text-transform: uppercase;
+   margin-bottom: 2%;
+}
+
+.skills h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+.contactLinks {
+    width: 30%;
+    position: absolute;
+    top: 230vh;
+}
+
+.contactLinks li {
+    list-style: none;
+    margin-bottom: 0%;
+    border-bottom: 2px white solid;
+}
+
+.contactLinks span {
+    margin-left: 10%;
+}
+
+
+.mobile-Slide {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    /* styles */
+
+    .topNavLogo {
+        width: 150px;
+        height: 140px;
+        position: absolute;
+        top: 3.5%;
+        left: 1%;
+        font-size: 40px;
+    }
+  
+    nav {
+        position: absolute;
+        top: 0;
+        left: 89%;
+        z-index: 100;
+    }
+
+    nav .mainMenu {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: top 30s ease;
+        display: none;
+        background-color: black;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 4%;
+        right: 15px;
+    }
+
+    nav .openMenu {
+        display: block;
+        margin-top: 46px;
+       
+    }
+
+    .mobile-icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 16px;
+        width: 90%;
+        margin: auto;
+        margin-top: 40%;
+        text-transform: uppercase;
+        padding-bottom: 2%;
+        border-bottom: 2px white solid;
+        text-align:left;
+    }
+
+    .titleText {
+        width: 90%;
+        margin: auto; 
+        padding-top: 6%;
+        font-size: 14px;
+        text-indent: 30px;
+    }
+
+    .selectProject {
+        text-align: center;
+        padding-top: 12%;
+        padding-bottom: 4%;
+        font-size: 14px;
+        border-bottom: solid 1px white;
+    }
+
+    .container section {
+        min-width: 5%;
+        margin-left: 34%;
+        margin-right: 32%;
+        height:65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .block { 
+        width: 240px;
+        height: 450px;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    h1 {
+        position: absolute;
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 4px;
+    }
+    
+    .block-1 h1, .block-3 h1 {
+        bottom: 5%;
+        left: 45%;
+    }
+    
+    .block-2 h1, .block-4 h1 {
+        top: 6%;
+        left: 14%;
+    }
+
+    .mobile-Slide {
+        display: block;
+        position: absolute;
+        top: 134%;
+        margin-left: 38%;  
+        filter:opacity(0.8);
+    }
+
+    .mobile-Slide h1 {
+        padding: 8px;
+        border: 1px solid white;
+    }
+
+    .contacts h1 {
+        width: 90%;
+        height: auto;
+        margin-left: 8%;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        font-size: 14px;
+    }
+
+    .aboutIntro {
+        font-size: 18px;
+        margin-left: 8%;
+        margin-top: 38%;
+    }
+    
+    .aboutIntro .hello {
+        padding-bottom: 5%;
+    }
+
+    .aboutImage {
+        position: absolute;
+        top: 149%;
+        left: 30%;
+        width: 65%;
+        height: 35vh;
+        z-index: -10;
+    }
+
+    .aboutBio {
+        width: 84%;
+        margin: 10% auto 0 auto;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .skills {
+        width: 50%;
+        font-size: 14px;
+        line-height: 2em; 
+        margin: 5% 0 30% 8%;
+    }
+    
+    .skills h2 {
+       font-weight: bold;
+       text-decoration: underline;
+       text-transform: uppercase;
+       width: auto;
+    }
+    
+    .skills h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+        width: auto;
+     }
+
+    .contactLinks {
+        width: 30%;
+        margin-top: 15%;
+        margin-left: 8%;
+    }
+    
+    .contactLinks li {
+        list-style: none;
+        border-bottom: 2px white solid;
+    }
+
+    .contactLinks span {
+        margin-left: 10%;
+    }
+
+    
+.contactLinks {
+    width: 30%;
+    position: absolute;
+    top: 200vh;
+}
+
+}
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 601px) and (max-width: 823px){
+    /* styles */
+
+    nav {
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    .container section {
+        margin-left: 25%;
+        margin-right: 22%;
+    }
+}
+
+@media screen and (min-width: 824px) and (max-width: 1023px) {
+
+    nav {
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        margin-left: 24%;
+        margin-top: 5%;
+    }
+
+.container section {
+    margin-left: 15%;
+    margin-right: 13%;
+}
+
+.aboutImage {
+    top: 210%;
+}
+
+.aboutBio {
+    width: 50%;
+    margin-top: 5%;
+}
+
+.contactLinks {
+    margin-bottom: 5%;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+ 
+    nav {
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        margin-left: 30%;
+        margin-top: 3.5%;
+    }
+
+    .titleText {
+        text-align: center;
+        width: 60%;
+    }
+
+    .container section {
+        margin-left: 15%;
+        margin-right: 8%;
+    }
+    
+    .contacts h1 {
+        padding-bottom: 0;
+    }
+
+    .aboutIntro {
+        margin-top: 8%;
+    }
+    
+    .aboutImage {
+        top: 190%;
+        left: 65%;
+    }
+    
+    .aboutBio {
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    .contactLinks {
+        margin-top: 12%;
+        margin-bottom: 5%;
+        margin-left: 65%;
+    }
+
+}

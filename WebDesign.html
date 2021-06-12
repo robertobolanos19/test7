@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <title>Web Designs</title>
+         <link rel="stylesheet" href="webDesign.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div class="topNavLogo"> <a href="MainPage.html"><p>R</p></a></div>
+       
+        <nav>
+              <div class="openMenu"><i class="fa fa-bars"></i></div>
+              <ul class="mainMenu">
+                <li><a href="MainPage.html" id="closeHomeMenu">Home</a></li>
+                <li><a href="3Dgallery.html" id="closeGalleryMenu">3D Gallery</a></li>
+                <li><a href="WebDesign.html" id="closeGalleryMenu">Web Designs</a></li>
+                <li><a href="ArGalllery.html" id="closeGalleryMenu">AR Filters</a></li>
+
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="mobile-icons">
+                </span>
+            </ul>
+        </nav>
+
+        <div class="title"><h1>Web Designs</h1></div>
+
+        <div class="GalleryContainer">
+            <a href="Barber.html"><div class="galleryBlock block-1"><h1>BarberShop</h1></div></a>
+            <a href="ChairMan.html"><div class="galleryBlock block-2"><h1>ChairMan Bao!</h1></div></a>
+        </div>
+        
+        <script src="./MainPage.js"></script>
+        
+        <script src="baffle.min.js"></script>
+    <script>
+        const text = baffle('.title');
+        text.set({
+            characters : '/▓░ /▓▓<█ ▒▓▓>/ ▓▒▒ ▓<██░ ▓▓▓░ ░<< ░██▒ <░▒▓',
+            speed: 358
+        });
+        text.start();
+        text.reveal(6000)
+    </script>
+        
+    
+    </body>
+
+    
+
+
+</html>
